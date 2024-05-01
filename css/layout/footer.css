@@ -1,0 +1,27 @@
+footer{
+    border-top: var(--wt);
+    height: 80px;
+    display: grid;
+    place-content: center start;
+    
+    & p{
+        
+        font-size: 18px;
+    }
+
+    & a{
+        color: var(--wt);
+
+        &:hover{
+            text-decoration: underline;
+        }
+
+        & img{
+            width: 20px;
+            height: 20px;
+            background-color: var(--wt);
+            border-radius: 5px;
+        }
+    }
+
+}
