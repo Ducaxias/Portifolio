@@ -2,6 +2,7 @@
 @import url('/css/layout/footer.css');
 @import url('/css/layout/navbar.css');
 @import url('/css/reusable/card.css');
+@import url("/css/reusable/publications.css");
 
 :root{
     --wt: #fff;

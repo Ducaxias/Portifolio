@@ -3,6 +3,8 @@ footer{
     height: 80px;
     display: grid;
     place-content: center start;
+    position: absolute;
+    bottom: 0px;
     
     & p{
         
