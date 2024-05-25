@@ -1,0 +1,16 @@
+[
+    {
+        "ID": 1,
+        "data": "01/05/2024",
+        "Autor": "Eduardo Caxias",
+        "Titulo": "Como usar o JS para deixar suas páginas dinamica.",
+        "Resumo": "Uma das características mais poderosas do JavaScript é sua capacIDade de tornar as páginas da web dinâmicas, permitindo interações do usuário em tempo real sem a necessIDade de recarregar a página."
+    },
+    {           
+        "ID": 2,
+        "data": "01/05/2024",
+        "Autor": "Eduardo Caxias",
+        "Titulo": "Inovações do CSS moderno",
+        "Resumo": "As inovações do CSS moderno têm transformado a maneira como os desenvolvedores criam e estilizam websites."
+    }
+]
