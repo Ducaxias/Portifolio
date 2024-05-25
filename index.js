@@ -1,14 +1,25 @@
 const express = require("express");
-const server = express();
-const Publication = require('./lib/data.json')
+const app = express();
+var port = process.env.port || 8080
 
-server.get('/DevBlog', (req, res) => {
-        return res.json(Publication)
+const path = require("path")
+const Publication = require('./App/lib/data.json');
+const { title } = require("process");
+
+app.use(express.static(path.join(__dirname, "App")))
+
+app.get('/', (req, res) => {
+        return res.sendFile('/index.html', {root: path.join(__dirname, 'App')})
     }
 )
 
-server.listen(
-    3000, ()=>{
-        console.log("ele vive");
+app.get('/DevBlog', (req,res) =>{
+    return res.render('DevBlog', {title:'DevBlog', menssage:"DevBlog page"})
+})
+
+app.listen(
+    port, ()=>{
+        console.log(`Server listening on http://localhost:${port}`);
     }
 )
+
