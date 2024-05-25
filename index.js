@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
 )
 
 app.get('/DevBlog', (req,res) =>{
-    return res.render('DevBlog', {title:'DevBlog', menssage:"DevBlog page"})
+    return res.json({})
 })
 
 app.listen(
